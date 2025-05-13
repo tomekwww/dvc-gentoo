@@ -5,11 +5,12 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..13} )
 DISTUTILS_USE_PEP517=setuptools
+PYPI_NO_NORMALIZE=True
 inherit distutils-r1 pypi
 
 DESCRIPTION="Extensible task queue used in DVC"
 HOMEPAGE="https://pypi.org/project/dvc-task/"
-SRC_URI="https://files.pythonhosted.org/packages/19/ef/da712c4d9c7d6cacac27d7b2779e6a97c3381ef2c963c33719d39113b6a3/dvc_task-0.40.2.tar.gz"
+SRC_URI="https://files.pythonhosted.org/packages/19/ef/da712c4d9c7d6cacac27d7b2779e6a97c3381ef2c963c33719d39113b6a3/dvc_task-0.40.2.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"

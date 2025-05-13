@@ -5,11 +5,12 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..13} )
 DISTUTILS_USE_PEP517=setuptools
+PYPI_NO_NORMALIZE=True
 inherit distutils-r1 pypi
 
 DESCRIPTION="DVCs data management subsystem"
 HOMEPAGE="https://pypi.org/project/dvc-data/"
-SRC_URI="https://files.pythonhosted.org/packages/da/64/459483623d867d2161e3aacecc5f9f172e8a57438cfcfc029e00be5fb594/dvc_data-3.16.10.tar.gz"
+SRC_URI="https://files.pythonhosted.org/packages/da/64/459483623d867d2161e3aacecc5f9f172e8a57438cfcfc029e00be5fb594/dvc_data-3.16.10.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -30,7 +31,6 @@ RDEPEND="${PYTHON_DEPS}
 	>=dev-python/sqltrie-0.11.0[${PYTHON_USEDEP}]
 	>=dev-python/tqdm-4.63.1[${PYTHON_USEDEP}]
 	<dev-python/tqdm-5.0.0[${PYTHON_USEDEP}]
-	<dev-python/orjson-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/orjson-3.0.0[${PYTHON_USEDEP}]
-	>=dev-python/typer-slim-0.12.0[${PYTHON_USEDEP}]
+	<dev-python/orjson-4.0.0[${PYTHON_USEDEP}]
 "
