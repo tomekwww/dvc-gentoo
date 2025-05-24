@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>tomasz.m.wojna@gmail.com</email>
+		<name>Tomasz Wojna</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="pypi">simsimd</remote-id>
+		<remote-id type="github">unknown</remote-id>
+		<bugs-to>unknown@example.com</bugs-to>
+		<maintainer status="unknown">
+			<email>1983160+ashvardanian@users.noreply.github.com</email>
+			<name>Ash Vardanian</name>
+		</maintainer>
+	</upstream>
+	<longdescription>
+		Portable mixed-precision BLAS-like vector math library for x86 and ARM
+	</longdescription>
+</pkgmetadata>

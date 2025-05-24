@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>tomasz.m.wojna@gmail.com</email>
+		<name>Tomasz Wojna</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="pypi">flufl.lock</remote-id>
+		<remote-id type="github">https://gitlab.com/warsaw/flufl.lock.git</remote-id>
+		<bugs-to>https://gitlab.com/warsaw/flufl.lock/issues</bugs-to>
+		<maintainer status="unknown">
+			<email>barry@python.org</email>
+			<name></name>
+		</maintainer>
+	</upstream>
+	<longdescription>
+		NFS-safe file locking with timeouts for POSIX and Windows
+	</longdescription>
+</pkgmetadata>
