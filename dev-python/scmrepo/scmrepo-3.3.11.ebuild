@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="scmrepo"
 HOMEPAGE="https://pypi.org/project/scmrepo/"
 SRC_URI="https://files.pythonhosted.org/packages/25/c9/a05b8ce93ce8470e44f430f664396396b6b183cbe899407e8cd286a29165/scmrepo-3.3.11.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/scmrepo-3.3.11"
 
 LICENSE="Apache-2.0"
 SLOT="0"

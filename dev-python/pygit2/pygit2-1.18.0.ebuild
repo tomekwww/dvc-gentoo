@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Python bindings for libgit2"
 HOMEPAGE="https://github.com/libgit2/pygit2"
 SRC_URI="https://files.pythonhosted.org/packages/c1/4a/72a5f3572912d93d8096f8447a20fe3aff5b5dc65aca08a2083eae54d148/pygit2-1.18.0.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/pygit2-1.18.0"
 
 LICENSE="BSD"
 SLOT="0"

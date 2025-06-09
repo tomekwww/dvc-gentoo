@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Filesystemlike pathing and searching for dictionaries"
 HOMEPAGE="https://github.com/dpath-maintainers/dpath-python"
 SRC_URI="https://files.pythonhosted.org/packages/b5/ce/e1fd64d36e4a5717bd5e6b2ad188f5eaa2e902fde871ea73a79875793fc9/dpath-2.2.0.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/dpath-2.2.0"
 
 LICENSE="MIT"
 SLOT="0"

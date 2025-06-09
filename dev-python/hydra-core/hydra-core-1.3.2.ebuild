@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="A framework for elegantly configuring complex applications"
 HOMEPAGE="https://github.com/facebookresearch/hydra"
 SRC_URI="https://files.pythonhosted.org/packages/6d/8e/07e42bc434a847154083b315779b0a81d567154504624e181caf2c71cd98/hydra-core-1.3.2.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/hydra-core-1.3.2"
 
 LICENSE="MIT"
 SLOT="0"

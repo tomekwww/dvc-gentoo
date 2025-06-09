@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="REPL plugin for Click"
 HOMEPAGE="https://github.com/untitaker/click-repl"
 SRC_URI="https://files.pythonhosted.org/packages/cb/a2/57f4ac79838cfae6912f997b4d1a64a858fb0c86d7fcaae6f7b58d267fca/click-repl-0.3.0.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/click-repl-0.3.0"
 
 LICENSE="MIT"
 SLOT="0"

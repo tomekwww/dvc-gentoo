@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="DVCs data management subsystem"
 HOMEPAGE="https://pypi.org/project/dvc-data/"
 SRC_URI="https://files.pythonhosted.org/packages/da/64/459483623d867d2161e3aacecc5f9f172e8a57438cfcfc029e00be5fb594/dvc_data-3.16.10.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/dvc_data-3.16.10"
 
 LICENSE="Apache-2.0"
 SLOT="0"

@@ -170,6 +170,15 @@ def find_matching_license_file(license_string, license_dir="/var/db/repos/gentoo
 
     return 'BSD'
 
+def get_srcuri(url):
+    if url.endswith('tar.gz'):
+        return url + ' -> ${P}.gh.tar.gz'
+    if url.endswith('tar.xz'):
+        return url + ' -> ${P}.gh.tar.xz'
+    if url.endswith('tar.bz2'):
+        return url + ' -> ${P}.gh.tar.bz2'
+    if url.endswith('zip'):
+        return url + ' -> ${P}.gh.zip'
 
 def convert_to_ebuild(metadata, required_extras):
     """Convert PyPI metadata to a simple Gentoo ebuild format."""
@@ -191,7 +200,7 @@ def convert_to_ebuild(metadata, required_extras):
     if urls and (urls.get('homepage', '') or '').startswith('https://github.com/'):
         repository = urls.get('homepage', '')
     if urls and (urls.get('Download', '') or '').startswith('https://github.com/'):
-        src_uri = urls.get('Download', '')
+        src_uri = get_srcuri(urls.get('Download', ''))
     if (info.get('home_page', '') or '').startswith('https://github.com/'):
         repository = info.get('home_page', '')
     if (info.get('project_url', '') or '').startswith('https://github.com/'):
@@ -204,7 +213,7 @@ def convert_to_ebuild(metadata, required_extras):
 
     for url_entry in metadata['urls']:
         if url_entry['packagetype'] == 'sdist':
-            src_uri = url_entry['url'] + ' -> ${P}.gh.tar.gz'
+            src_uri = get_srcuri(url_entry['url'])
             break
     if not src_uri:
         if repository:

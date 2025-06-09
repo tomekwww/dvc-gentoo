@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Git for data scientists  manage your code and data together"
 HOMEPAGE="https://pypi.org/project/dvc/"
 SRC_URI="https://files.pythonhosted.org/packages/db/6d/0cf6feca9d2100d470ab8d276961a96eb7fe462a47e46e1a69e8697ccaa0/dvc-3.60.0.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/dvc-3.60.0"
 
 LICENSE="BSD"
 SLOT="0"

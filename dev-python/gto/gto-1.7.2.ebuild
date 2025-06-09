@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Version and deploy your models following GitOps principles"
 HOMEPAGE="https://pypi.org/project/gto/"
 SRC_URI="https://files.pythonhosted.org/packages/d6/ea/ea6267da29ac54a53944106e46337e3e8e43eaa24bb6b7cf5da18043758c/gto-1.7.2.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/gto-1.7.2"
 
 LICENSE="BSD"
 SLOT="0"

@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="A flexible configuration library"
 HOMEPAGE="https://github.com/omry/omegaconf"
 SRC_URI="https://files.pythonhosted.org/packages/09/48/6388f1bb9da707110532cb70ec4d2822858ddfb44f1cdf1233c20a80ea4b/omegaconf-2.3.0.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/omegaconf-2.3.0"
 
 LICENSE="BSD"
 SLOT="0"

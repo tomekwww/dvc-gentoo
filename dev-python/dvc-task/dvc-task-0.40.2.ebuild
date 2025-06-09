@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Extensible task queue used in DVC"
 HOMEPAGE="https://pypi.org/project/dvc-task/"
 SRC_URI="https://files.pythonhosted.org/packages/19/ef/da712c4d9c7d6cacac27d7b2779e6a97c3381ef2c963c33719d39113b6a3/dvc_task-0.40.2.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/dvc_task-0.40.2"
 
 LICENSE="Apache-2.0"
 SLOT="0"

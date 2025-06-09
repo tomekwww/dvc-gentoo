@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Distributed Task Queue"
 HOMEPAGE="https://docs.celeryq.dev/"
 SRC_URI="https://files.pythonhosted.org/packages/bb/7d/6c289f407d219ba36d8b384b42489ebdd0c84ce9c413875a8aae0c85f35b/celery-5.5.3.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/celery-5.5.3"
 
 LICENSE="BSD"
 SLOT="0"

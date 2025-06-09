@@ -11,6 +11,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="Dvc Render"
 HOMEPAGE="https://pypi.org/project/dvc-render/"
 SRC_URI="https://files.pythonhosted.org/packages/be/15/605312dbdc0931547987ee25a9a3f6fcabf48ca1436039abcd524156b8e2/dvc-render-1.0.2.tar.gz -> ${P}.gh.tar.gz"
+S="${WORKDIR}/dvc-render-1.0.2"
 
 LICENSE="Apache-2.0"
 SLOT="0"
